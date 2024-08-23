@@ -1,0 +1,13 @@
+.area-input, .area-resultado {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.area-input {
+    width: 60%;
+}
+
+.area-resultado {
+    width: 40%;
+}
+
