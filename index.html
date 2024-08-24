@@ -7,22 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a TrackerBook</h1>
-    </header>
-    <main>
+    <div class="container">
         <section class="area-input">
-            <img alt="Logo de TrackerBook" src="logo.png"/>
+            <div class="icon"><img alt="Logo de TrackerBook" src="logo.png"/></div>
+            
             <textarea id="areaTextoInput" name="areaTextoInput" rows="10" cols="50" placeholder="Ingresa el texto aquí"></textarea>
-            <p>Solo letras mínusculas y sin acentos</p>
-            <button id="cifrarButton">Cifrar</button>
-            <button id="descifrarButton">Descifrar</button>
+            <p class="pista">
+                <span class="icono-alerta">&#9888;</span>
+                Solo letras minúsculas y sin acentos
+            </p>
+            <div class="grupo-button">
+                <button id="cifrarButton">Cifrar</button>
+                <button id="descifrarButton">Descifrar</button>
+            </div>
         </section>
         <section class="area-resultado">
             <p id="resultadoTexto"><strong>Ningún texto encontrado</strong></br><span>Ingrese el texto que desees encriptar o desencriptrar</span></p>
             <button id="copiarButton">Copiar</button>
         </section>
-    </main>
+    </div>
     <footer>
         <p>&copy; 2024 TrackerBook. Todos los derechos reservados.</p>
     </footer>
