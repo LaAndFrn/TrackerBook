@@ -1,7 +1,24 @@
+:root {
+    --dark-blue-100: #609ed4;
+    --dark-blue-200: #356ea9;
+    --dark-blue-300: #0a3871;
+    --dark-blue-400: #072b61;
+    --dark-blue-500: #052051;
+    --light-blue-100: #f3f4fc;
+    --light-blue-200: #eff1fa;
+    --light-blue-300: #e9ecf8;
+    --light-blue-400: #aab2d5;
+    --light-blue-500: #757fb2;
+    --gray-100: #ced4da;
+    --gray-200: #adb4bd;
+    --gray-300: #868e96;
+    --gray-400: #495057;
+    --gray-500: #343a40;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #eff1fa;
-    color: #212529;
+    background-color: var(--light-blue-200);
+    color: var(--dark-blue-200);
     margin: 0;
     padding: 0;
 }
@@ -25,8 +42,12 @@ body {
     }
 }
 
-.espacio-entrada, .espacio-resultado {
+.espacio-entrada {
     flex: 1;
+} 
+
+.espacio-resultado {
+    flex: 0.5;
 }
 
 .logo {
@@ -44,10 +65,10 @@ body {
 #areaTextoInput, #resultadoTexto{
     border: none;
     height: -webkit-fill-available;
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
     border-radius: 3rem;
-    background-color: #fff;
+    background-color: var(--light-blue-100);
     resize: none;
     overflow: hidden;
 }
@@ -66,6 +87,8 @@ body {
 }
 
 #areaTextoInput{
+    color: var(--dark-blue-200);
+    font-size: 1.8rem;
     background-color: transparent;
 }
 
@@ -75,12 +98,19 @@ body {
 }
 
 #resultadoTexto{
-    text-align: center;
+    color: var(--gray-500);
+    text-align: left;
+    text-wrap: pretty;
+    background-color: #fff;
+}
+
+.espacio-resultado .res{
+    background-color: #fff;
 }
 
 .pista {
     font-size: 14px;
-    color: #6c757d;
+    color: var(--gray-400);
     margin-bottom: 16px;
     display: inline-flex
 }
@@ -89,30 +119,36 @@ body {
     margin-right: 8px;
 }
 
-.groupo-button {
+.grupo-button {
+    padding: 10px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 button, #cifrarButton {
     flex: 1;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
+    color: var(--light-blue-100);
+    background-color: var(--dark-blue-400);
     border: none;
     border-radius: 1rem;
     cursor: pointer;
 }
 
 #descifrarButton {
-    background-color: #fff;
-    color: #007bff;
-    border: 2px solid #007bff;
+    background-color: var(--light-blue-300);
+    color: var(--dark-blue-400);
+    border: 2px solid var(--dark-blue-400);
 }
 
 #copiarButton {
+    display: none;
     width: 200px;
+    align-self: center;
+    background-color: var(--light-blue-300);
+    color: var(--dark-blue-400);
+    border: 2px solid var(--dark-blue-400);
 }
 
 .res {
