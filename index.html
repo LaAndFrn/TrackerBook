@@ -7,24 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <section class="area-input">
-            <div class="icon"><img alt="Logo de TrackerBook" src="logo.png"/></div>
-            
-            <textarea id="areaTextoInput" name="areaTextoInput" rows="10" cols="50" placeholder="Ingresa el texto aquí"></textarea>
-            <p class="pista">
-                <span class="icono-alerta">&#9888;</span>
-                Solo letras minúsculas y sin acentos
-            </p>
-            <div class="grupo-button">
-                <button id="cifrarButton">Cifrar</button>
-                <button id="descifrarButton">Descifrar</button>
+    <header>
+        <div class="container fluid">
+            <div class="logo">
+                <img alt="Logo de TrackerBook" src="logo.png"/>
             </div>
-        </section>
-        <section class="area-resultado">
-            <p id="resultadoTexto"><strong>Ningún texto encontrado</strong></br><span>Ingrese el texto que desees encriptar o desencriptrar</span></p>
-            <button id="copiarButton">Copiar</button>
-        </section>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="espacio-entrada">
+            <div class="res">
+                <textarea id="areaTextoInput" name="areaTextoInput" placeholder="Ingresa el texto aquí"></textarea>
+                <div class="pista">
+                    <span class="icono-alerta">&#9888;</span>
+                    <p></p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="grupo-button">
+                    <button id="cifrarButton">Cifrar</button>
+                    <button id="descifrarButton">Descifrar</button>
+                </div>   
+            </div>
+            
+        </div>
+        <div class="espacio-resultado">
+            <div class="res">
+                <p id="resultadoTexto"><img alt="persona con una lupa" src="muneco.png"/></br><strong>Ningún texto encontrado</strong></br><span>Ingrese el texto que desees encriptar o desencriptrar</span></p>
+                <button id="copiarButton">Copiar</button>
+
+            </div>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 TrackerBook. Todos los derechos reservados.</p>
